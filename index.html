@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />    
 <title>WA Recovery Tool by KaNoWA</title>    
 <style>    
+
 :root{    
   --bg-1:#071226;    
   --bg-2:#071733;    
@@ -15,21 +16,35 @@
   --max-w:520px;    
 }    
 *{box-sizing:border-box}    
-/* Perbaikan Scroll & Warna: Menambahkan background-attachment fixed agar gradasi tidak 'putus' saat scroll */
-html,body{
+
+/* PERBAIKAN TOTAL DI SINI */
+html, body {
   height: 100%;
   margin: 0;
+  /* Gunakan background-color solid yang sama dengan --bg-1 agar saat scroll tidak ada warna putih/abu */
+  background-color: #071226; 
+  /* Gradasi dibuat 'fixed' (menempel di layar, bukan di konten) agar tidak di-render ulang saat scroll */
+  background-image: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  background-attachment: fixed;
+  background-size: cover;
+  
   font-family: Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
   color: #e6eef6;
-  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
-  background-attachment: fixed; 
-  background-color: var(--bg-1); /* Fallback agar tidak putih saat lag */
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-}    
-.app{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;flex-direction:column;}  
+}
 
-/* Navbar */  
+/* Tambahan agar area aplikasi selalu menutupi layar tanpa celah */
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  background: transparent; /* Biarkan background body yang terlihat */
+}
+
 .navbar{  
 position:fixed;  
 top:14px;left:16px;  
