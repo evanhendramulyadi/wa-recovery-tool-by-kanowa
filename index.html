@@ -388,299 +388,304 @@
       <p>Masukkan password untuk lanjut menggunakan website ini.</p>
       <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
         <div class="input-row">
-            <div class="password-container">
+          <div class="password-container">
 
-              <form autocomplete="off">
-                <input id="passwordInput" type="password" placeholder="Masukkan password" autocomplete="new-password"
-                  inputmode="text" autocorrect="off" autocapitalize="off" spellcheck="false" name="nope"
-                  data-lpignore="true">
-              </form>
-              <span id="togglePw" class="toggle-password">
-                <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-              </span>
-            </div>
-            <button id="pwBtn" class="btn">Masuk</button>
+            <form autocomplete="off">
+              <input id="passwordInput" type="password" placeholder="Masukkan password" autocomplete="new-password"
+                name="random_password_kanowa_123" autocorrect="off" autocapitalize="off" spellcheck="false"
+                data-lpignore="true" data-form-type="other" inputmode="none">
+            </form>
+            <span id="togglePw" class="toggle-password">
+              <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </span>
           </div>
-          <div id="pwMsg" style="color:#f87171;font-size:13px;height:18px;"></div>
+          <button id="pwBtn" class="btn">Masuk</button>
         </div>
-        <div class="buy-access">Untuk beli akses password → DM TikTok: @kangnokoswa.id</div>
-        <div class="footer-box">&copy; 2026–Present Kang Nokos WA. All Rights Reserved.</div>
+        <div id="pwMsg" style="color:#f87171;font-size:13px;height:18px;"></div>
       </div>
-
-      <div id="homeMainPage" class="container" style="display:none;">
-        <main class="card">
-          <h1 class="title">Selamat Datang di Website WA Recovery Tool by KaNoWA!</h1>
-          <p class="lead" style="text-align:center;color:#cbd5e1;margin-top:10px;font-size:15px;">
-            <strong>Silakan pilih menu yang ingin Anda gunakan:</strong>
-          </p>
-          <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
-            <button id="toUnban" class="btn">🛠️ Unban Tool</button>
-            <button id="toTips" class="btn">🛡️ Anti-Ban Tips</button>
-          </div>
-          <h3 style="text-align:center;color:#cbd5e1;margin-top:18px;font-size:15px;">
-            Ikuti TikTok resmi Kang Nokos WA untuk mendapatkan promo, update terbaru, dan berbagai informasi menarik
-            lainnya!
-          </h3>
-          <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
-            <a href="https://www.tiktok.com/@kangnokoswa.id?_r=1&_t=ZS-95a582qVHoe" target="_blank" class="btn"
-              style="width:100%;display:flex;align-items:center;justify-content:center;font-size:16px;padding:12px 16px;text-decoration:none;">
-              🎵 TikTok (@kangnokoswa.id)
-            </a>
-          </div>
-          <h3 style="text-align:center;color:#cbd5e1;margin-top:22px;font-size:15px;">
-            Website ini dibuat langsung oleh owner Kang Nokos WA, Evan Hendra Mulyadi. Ikuti media sosialnya di bawah
-            ini!
-          </h3>
-          <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
-            <a href="https://www.instagram.com/evanhendraa?igsh=czY4ZDM0eTB1bjNu" target="_blank" class="btn"
-              style="width:100%;display:flex;align-items:center;justify-content:center;font-size:16px;padding:12px 16px;text-decoration:none;">
-              📸 Instagram (@evanhendraa)
-            </a>
-            <a href="https://www.tiktok.com/@evanhendraa?_r=1&_t=ZS-91pXnW03QGN" target="_blank" class="btn"
-              style="width:100%;display:flex;align-items:center;justify-content:center;font-size:16px;padding:12px 16px;text-decoration:none;">
-              🎵 TikTok (@evanhendraa)
-            </a>
-          </div>
-          <div class="footer-box">
-            &copy; 2026–Present Kang Nokos WA. All Rights Reserved.
-          </div>
-        </main>
-      </div>
-
-      <div id="homePage" class="container" style="display:none;">
-        <main class="card">
-          <h1 class="title">Form Unban WhatsApp</h1>
-          <p class="lead">Masukkan nama lengkap dan nomor WhatsApp Anda (format internasional), lalu pilih opsi banding.
-          </p>
-          <form id="unbanForm" class="form" onsubmit="return false;">
-            <div>
-              <label for="name">Nama Lengkap Anda</label>
-              <input id="name" type="text" placeholder="Masukkan nama lengkap Anda di sini" required>
-            </div>
-            <div>
-              <label for="phone">Nomor WhatsApp (format internasional, contoh: +6281234567890)</label>
-              <input id="phone" type="text" inputmode="tel" placeholder="+6281234567890" autocomplete="tel" required>
-            </div>
-            <div>
-              <label for="bandOption">Pilih Opsi Banding</label>
-              <select id="bandOption">
-                <option value="permanen">Permanen</option>
-                <option value="sementara">Sementara</option>
-              </select>
-            </div>
-            <div class="row" style="margin-top:6px">
-              <div class="col"><button id="sendBtn" class="btn" type="button">Kirim Banding</button></div>
-              <div style="width:120px"><button id="clearBtn" class="btn ghost" type="button">Bersihkan</button></div>
-            </div>
-            <div id="feedback" class="result"></div>
-            <div class="note">
-              Setelah klik <strong>Kirim Banding</strong>, Anda akan otomatis diarahkan ke Gmail.
-              Cukup tekan <strong>Send</strong> untuk mengirim.
-              <br><br>
-              ⚠️ <em>Catatan:</em> Jika nomor WhatsApp yang Anda isi <strong>tidak sedang diblokir atau tidak terkena
-                banned</strong>,
-              maka pengajuan banding ini <strong>tidak akan berpengaruh apa pun</strong> meskipun email berhasil
-              terkirim ke pihak WhatsApp.
-              <br><br>
-              🕒 <strong>Perlu diingat:</strong> Penggunaan website ini hanya bertujuan untuk <strong>membantu
-                mempercepat proses unban WhatsApp dan meningkatkan peluang keberhasilan</strong>,
-              <strong>bukan untuk menjamin 100% keberhasilan atau hasil yang instan</strong>. Keputusan akhir sepenuhnya
-              berada di tangan <strong>pihak WhatsApp</strong>.
-            </div>
-            <div style="text-align:center;margin-top:14px;">
-              <button id="goHome1" class="btn ghost">⬅️ Kembali ke Home</button>
-            </div>
-          </form>
-          <div class="footer-box">&copy; 2026–Present Kang Nokos WA. All Rights Reserved.</div>
-        </main>
-      </div>
-
-      <div id="tipsPage" class="container" style="display:none;">
-        <main class="card">
-          <h1 class="title">🛡️ Tips Aman agar WhatsApp Terhindar dari Banned</h1>
-          <p class="lead">
-            Berikut beberapa tips penting agar akun WhatsApp Anda tidak mudah terkena banned dan tetap aman digunakan
-            setiap hari:
-          </p>
-          <ul style="color:#cbd5e1;font-size:14px;line-height:1.6;">
-            <li>Gunakan <strong>aplikasi WhatsApp resmi</strong> yang diunduh dari <em>Google Play Store</em> atau
-              <em>App Store</em>.
-            </li>
-            <li>Hindari menggunakan <strong>aplikasi modifikasi</strong> seperti GBWhatsApp, FMWhatsApp, YoWhatsApp, dan
-              sejenisnya.</li>
-            <li>Jangan kirim <strong>pesan massal</strong> atau <strong>broadcast</strong> ke banyak orang yang tidak
-              menyimpan nomor Anda.</li>
-            <li>Hindari mengirim <strong>link mencurigakan</strong>, konten spam, atau pesan berulang yang bisa dianggap
-              mengganggu.</li>
-            <li>Aktifkan fitur <strong>Verifikasi Dua Langkah</strong> untuk meningkatkan keamanan akun Anda.</li>
-            <li>Gunakan WhatsApp secara <strong>wajar dan sesuai ketentuan</strong> agar terhindar dari sistem deteksi
-              pelanggaran.</li>
-          </ul>
-          <p style="color:#94a3b8;font-size:13px;margin-top:16px;">
-            Dengan mengikuti tips di atas, peluang akun Anda terkena banned akan jauh lebih kecil. Gunakan WhatsApp
-            dengan bijak dan tetap aman.
-          </p>
-          <div style="text-align:center;margin-top:14px;">
-            <button id="goHome2" class="btn ghost">⬅️ Kembali ke Home</button>
-          </div>
-          <div class="footer-box">&copy; 2026–Present Kang Nokos WA. All Rights Reserved.</div>
-        </main>
-      </div>
+      <div class="buy-access">Untuk beli akses password → DM TikTok: @kangnokoswa.id</div>
+      <div class="footer-box">&copy; 2026–Present Kang Nokos WA. All Rights Reserved.</div>
     </div>
 
-    <script>
-      /* Element refs */
-      const a = 'V';
-      const b = 'W';
-      const c = '5';
-      const d = 'i';
-      const e = 'Q';
-      const f = 'G';
-      const g = '5';
-      const h = 'X';
-      const i = 'N';
-      const j = 'A';
-      const k = '=';
-      const l = '=';
-      const TRUE_PASSWORD = atob(a + b + c + d + e + f + g + h + i + j + k + l);
+    <div id="homeMainPage" class="container" style="display:none;">
+      <main class="card">
+        <h1 class="title">Selamat Datang di Website WA Recovery Tool by KaNoWA!</h1>
+        <p class="lead" style="text-align:center;color:#cbd5e1;margin-top:10px;font-size:15px;">
+          <strong>Silakan pilih menu yang ingin Anda gunakan:</strong>
+        </p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+          <button id="toUnban" class="btn">🛠️ Unban Tool</button>
+          <button id="toTips" class="btn">🛡️ Anti-Ban Tips</button>
+        </div>
+        <h3 style="text-align:center;color:#cbd5e1;margin-top:18px;font-size:15px;">
+          Ikuti TikTok resmi Kang Nokos WA untuk mendapatkan promo, update terbaru, dan berbagai informasi menarik
+          lainnya!
+        </h3>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+          <a href="https://www.tiktok.com/@kangnokoswa.id?_r=1&_t=ZS-95a582qVHoe" target="_blank" class="btn"
+            style="width:100%;display:flex;align-items:center;justify-content:center;font-size:16px;padding:12px 16px;text-decoration:none;">
+            🎵 TikTok (@kangnokoswa.id)
+          </a>
+        </div>
+        <h3 style="text-align:center;color:#cbd5e1;margin-top:22px;font-size:15px;">
+          Website ini dibuat langsung oleh owner Kang Nokos WA, Evan Hendra Mulyadi. Ikuti media sosialnya di bawah
+          ini!
+        </h3>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+          <a href="https://www.instagram.com/evanhendraa?igsh=czY4ZDM0eTB1bjNu" target="_blank" class="btn"
+            style="width:100%;display:flex;align-items:center;justify-content:center;font-size:16px;padding:12px 16px;text-decoration:none;">
+            📸 Instagram (@evanhendraa)
+          </a>
+          <a href="https://www.tiktok.com/@evanhendraa?_r=1&_t=ZS-91pXnW03QGN" target="_blank" class="btn"
+            style="width:100%;display:flex;align-items:center;justify-content:center;font-size:16px;padding:12px 16px;text-decoration:none;">
+            🎵 TikTok (@evanhendraa)
+          </a>
+        </div>
+        <div class="footer-box">
+          &copy; 2026–Present Kang Nokos WA. All Rights Reserved.
+        </div>
+      </main>
+    </div>
 
-      const splash = document.getElementById('splash');
-      const navbar = document.getElementById('navbar');
-      const homePage = document.getElementById('homePage');
-      const tipsPage = document.getElementById('tipsPage');
-      const homeMainPage = document.getElementById('homeMainPage');
-      const pwInput = document.getElementById('passwordInput');
-      const pwBtn = document.getElementById('pwBtn');
-      const pwMsg = document.getElementById('pwMsg');
-      const menuBtn = document.getElementById('menuBtn');
-      const menu = document.getElementById('menu');
-      const togglePw = document.getElementById('togglePw');
-      const eyeIcon = document.getElementById('eyeIcon');
+    <div id="homePage" class="container" style="display:none;">
+      <main class="card">
+        <h1 class="title">Form Unban WhatsApp</h1>
+        <p class="lead">Masukkan nama lengkap dan nomor WhatsApp Anda (format internasional), lalu pilih opsi banding.
+        </p>
+        <form id="unbanForm" class="form" onsubmit="return false;">
+          <div>
+            <label for="name">Nama Lengkap Anda</label>
+            <input id="name" type="text" placeholder="Masukkan nama lengkap Anda di sini" required>
+          </div>
+          <div>
+            <label for="phone">Nomor WhatsApp (format internasional, contoh: +6281234567890)</label>
+            <input id="phone" type="text" inputmode="tel" placeholder="+6281234567890" autocomplete="tel" required>
+          </div>
+          <div>
+            <label for="bandOption">Pilih Opsi Banding</label>
+            <select id="bandOption">
+              <option value="permanen">Permanen</option>
+              <option value="sementara">Sementara</option>
+            </select>
+          </div>
+          <div class="row" style="margin-top:6px">
+            <div class="col"><button id="sendBtn" class="btn" type="button">Kirim Banding</button></div>
+            <div style="width:120px"><button id="clearBtn" class="btn ghost" type="button">Bersihkan</button></div>
+          </div>
+          <div id="feedback" class="result"></div>
+          <div class="note">
+            Setelah klik <strong>Kirim Banding</strong>, Anda akan otomatis diarahkan ke Gmail.
+            Cukup tekan <strong>Send</strong> untuk mengirim.
+            <br><br>
+            ⚠️ <em>Catatan:</em> Jika nomor WhatsApp yang Anda isi <strong>tidak sedang diblokir atau tidak terkena
+              banned</strong>,
+            maka pengajuan banding ini <strong>tidak akan berpengaruh apa pun</strong> meskipun email berhasil
+            terkirim ke pihak WhatsApp.
+            <br><br>
+            🕒 <strong>Perlu diingat:</strong> Penggunaan website ini hanya bertujuan untuk <strong>membantu
+              mempercepat proses unban WhatsApp dan meningkatkan peluang keberhasilan</strong>,
+            <strong>bukan untuk menjamin 100% keberhasilan atau hasil yang instan</strong>. Keputusan akhir sepenuhnya
+            berada di tangan <strong>pihak WhatsApp</strong>.
+          </div>
+          <div style="text-align:center;margin-top:14px;">
+            <button id="goHome1" class="btn ghost">⬅️ Kembali ke Home</button>
+          </div>
+        </form>
+        <div class="footer-box">&copy; 2026–Present Kang Nokos WA. All Rights Reserved.</div>
+      </main>
+    </div>
 
-      /* Nav links */
-      const navHome = document.getElementById('navHome');
-      const navUnban = document.getElementById('navUnban');
-      const navTips = document.getElementById('navTips');
+    <div id="tipsPage" class="container" style="display:none;">
+      <main class="card">
+        <h1 class="title">🛡️ Tips Aman agar WhatsApp Terhindar dari Banned</h1>
+        <p class="lead">
+          Berikut beberapa tips penting agar akun WhatsApp Anda tidak mudah terkena banned dan tetap aman digunakan
+          setiap hari:
+        </p>
+        <ul style="color:#cbd5e1;font-size:14px;line-height:1.6;">
+          <li>Gunakan <strong>aplikasi WhatsApp resmi</strong> yang diunduh dari <em>Google Play Store</em> atau
+            <em>App Store</em>.
+          </li>
+          <li>Hindari menggunakan <strong>aplikasi modifikasi</strong> seperti GBWhatsApp, FMWhatsApp, YoWhatsApp, dan
+            sejenisnya.</li>
+          <li>Jangan kirim <strong>pesan massal</strong> atau <strong>broadcast</strong> ke banyak orang yang tidak
+            menyimpan nomor Anda.</li>
+          <li>Hindari mengirim <strong>link mencurigakan</strong>, konten spam, atau pesan berulang yang bisa dianggap
+            mengganggu.</li>
+          <li>Aktifkan fitur <strong>Verifikasi Dua Langkah</strong> untuk meningkatkan keamanan akun Anda.</li>
+          <li>Gunakan WhatsApp secara <strong>wajar dan sesuai ketentuan</strong> agar terhindar dari sistem deteksi
+            pelanggaran.</li>
+        </ul>
+        <p style="color:#94a3b8;font-size:13px;margin-top:16px;">
+          Dengan mengikuti tips di atas, peluang akun Anda terkena banned akan jauh lebih kecil. Gunakan WhatsApp
+          dengan bijak dan tetap aman.
+        </p>
+        <div style="text-align:center;margin-top:14px;">
+          <button id="goHome2" class="btn ghost">⬅️ Kembali ke Home</button>
+        </div>
+        <div class="footer-box">&copy; 2026–Present Kang Nokos WA. All Rights Reserved.</div>
+      </main>
+    </div>
+  </div>
 
-      /* Buttons inside pages */
-      const toUnban = document.getElementById('toUnban');
-      const toTips = document.getElementById('toTips');
-      const goHome1 = document.getElementById('goHome1');
-      const goHome2 = document.getElementById('goHome2');
+  <script>
+    /* Element refs */
+    const a = 'V';
+    const b = 'W';
+    const c = '5';
+    const d = 'i';
+    const e = 'Q';
+    const f = 'G';
+    const g = '5';
+    const h = 'X';
+    const i = 'N';
+    const j = 'A';
+    const k = '=';
+    const l = '=';
+    const TRUE_PASSWORD = atob(a + b + c + d + e + f + g + h + i + j + k + l);
 
-      /* Form elements */
-      const nameEl = document.getElementById('name');
-      const phoneEl = document.getElementById('phone');
-      const bandEl = document.getElementById('bandOption');
-      const sendBtn = document.getElementById('sendBtn');
-      const feedback = document.getElementById('feedback');
-      const clearBtn = document.getElementById('clearBtn');
+    const splash = document.getElementById('splash');
+    const navbar = document.getElementById('navbar');
+    const homePage = document.getElementById('homePage');
+    const tipsPage = document.getElementById('tipsPage');
+    const homeMainPage = document.getElementById('homeMainPage');
+    const pwInput = document.getElementById('passwordInput');
+    const pwBtn = document.getElementById('pwBtn');
+    const pwMsg = document.getElementById('pwMsg');
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+    const togglePw = document.getElementById('togglePw');
+    const eyeIcon = document.getElementById('eyeIcon');
 
-      /* Fungsi Show/Hide Password & Ganti Ikon Mata (Tetap Hitam) */
-      togglePw.addEventListener('click', () => {
-        const isPassword = pwInput.type === 'password';
-        pwInput.type = isPassword ? 'text' : 'password';
+    /* Nav links */
+    const navHome = document.getElementById('navHome');
+    const navUnban = document.getElementById('navUnban');
+    const navTips = document.getElementById('navTips');
 
-        if (isPassword) {
-          // Ikon mata dicoret
-          eyeIcon.innerHTML = '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M17.94 17.94A10.07 10.07 0 0 1 12 19c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>';
-        } else {
-          // Ikon mata biasa
-          eyeIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
-        }
-      });
+    /* Buttons inside pages */
+    const toUnban = document.getElementById('toUnban');
+    const toTips = document.getElementById('toTips');
+    const goHome1 = document.getElementById('goHome1');
+    const goHome2 = document.getElementById('goHome2');
 
-      function setActiveMenu(menuId) {
-        document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
-        const el = document.getElementById(menuId);
-        if (el) el.classList.add('active');
+    /* Form elements */
+    const nameEl = document.getElementById('name');
+    const phoneEl = document.getElementById('phone');
+    const bandEl = document.getElementById('bandOption');
+    const sendBtn = document.getElementById('sendBtn');
+    const feedback = document.getElementById('feedback');
+    const clearBtn = document.getElementById('clearBtn');
+
+    /* Fungsi Show/Hide Password & Ganti Ikon Mata (Tetap Hitam) */
+    togglePw.addEventListener('click', () => {
+      const isPassword = pwInput.type === 'password';
+      pwInput.type = isPassword ? 'text' : 'password';
+
+      if (isPassword) {
+        // Ikon mata dicoret
+        eyeIcon.innerHTML = '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M17.94 17.94A10.07 10.07 0 0 1 12 19c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>';
+      } else {
+        // Ikon mata biasa
+        eyeIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
       }
+    });
 
-      function showHomeMain() {
-        homeMainPage.style.display = 'block';
-        homePage.style.display = 'none';
-        tipsPage.style.display = 'none';
-        menu.style.display = 'none';
-        setActiveMenu('navHome');
-        window.scrollTo(0, 0);
+    function setActiveMenu(menuId) {
+      document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
+      const el = document.getElementById(menuId);
+      if (el) el.classList.add('active');
+    }
+
+    pwInput.value = '';
+    setTimeout(() => {
+      pwInput.value = '';
+    }, 100);
+
+    function showHomeMain() {
+      homeMainPage.style.display = 'block';
+      homePage.style.display = 'none';
+      tipsPage.style.display = 'none';
+      menu.style.display = 'none';
+      setActiveMenu('navHome');
+      window.scrollTo(0, 0);
+    }
+    function showHome() {
+      homeMainPage.style.display = 'none';
+      homePage.style.display = 'block';
+      tipsPage.style.display = 'none';
+      menu.style.display = 'none';
+      setActiveMenu('navUnban');
+      window.scrollTo(0, 0);
+    }
+    function showTips() {
+      homeMainPage.style.display = 'none';
+      homePage.style.display = 'none';
+      tipsPage.style.display = 'block';
+      menu.style.display = 'none';
+      setActiveMenu('navTips');
+      window.scrollTo(0, 0);
+    }
+
+    /* Password / login */
+    pwBtn.addEventListener('click', () => {
+      const v = pwInput.value.trim();
+      if (v === TRUE_PASSWORD) {
+        splash.style.display = 'none';
+        navbar.style.display = 'flex';
+        showHomeMain();
+      } else {
+        pwMsg.textContent = 'Password salah — coba lagi.';
       }
-      function showHome() {
-        homeMainPage.style.display = 'none';
-        homePage.style.display = 'block';
-        tipsPage.style.display = 'none';
-        menu.style.display = 'none';
-        setActiveMenu('navUnban');
-        window.scrollTo(0, 0);
-      }
-      function showTips() {
-        homeMainPage.style.display = 'none';
-        homePage.style.display = 'none';
-        tipsPage.style.display = 'block';
-        menu.style.display = 'none';
-        setActiveMenu('navTips');
-        window.scrollTo(0, 0);
-      }
+    });
+    pwInput.addEventListener('keydown', e => { if (e.key === 'Enter') pwBtn.click(); });
 
-      /* Password / login */
-      pwBtn.addEventListener('click', () => {
-        const v = pwInput.value.trim();
-        if (v === TRUE_PASSWORD) {
-          splash.style.display = 'none';
-          navbar.style.display = 'flex';
-          showHomeMain();
-        } else {
-          pwMsg.textContent = 'Password salah — coba lagi.';
-        }
-      });
-      pwInput.addEventListener('keydown', e => { if (e.key === 'Enter') pwBtn.click(); });
+    menuBtn.addEventListener('click', () => menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex');
 
-      menuBtn.addEventListener('click', () => menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex');
+    navHome.addEventListener('click', showHomeMain);
+    navUnban.addEventListener('click', showHome);
+    navTips.addEventListener('click', showTips);
 
-      navHome.addEventListener('click', showHomeMain);
-      navUnban.addEventListener('click', showHome);
-      navTips.addEventListener('click', showTips);
+    toUnban.addEventListener('click', showHome);
+    toTips.addEventListener('click', showTips);
+    goHome1.addEventListener('click', showHomeMain);
+    goHome2.addEventListener('click', showHomeMain);
 
-      toUnban.addEventListener('click', showHome);
-      toTips.addEventListener('click', showTips);
-      goHome1.addEventListener('click', showHomeMain);
-      goHome2.addEventListener('click', showHomeMain);
+    function normalizePhone(raw) {
+      if (!raw) return null;
+      let s = raw.replace(/[\s()-]/g, '');
+      if (/^0[0-9]+$/.test(s)) s = '+62' + s.slice(1);
+      if (/^62[0-9]+$/.test(s)) s = '+' + s;
+      if (/^\+[0-9]+$/.test(s)) return s;
+      return null;
+    }
 
-      function normalizePhone(raw) {
-        if (!raw) return null;
-        let s = raw.replace(/[\s()-]/g, '');
-        if (/^0[0-9]+$/.test(s)) s = '+62' + s.slice(1);
-        if (/^62[0-9]+$/.test(s)) s = '+' + s;
-        if (/^\+[0-9]+$/.test(s)) return s;
-        return null;
-      }
-
-      sendBtn.addEventListener('click', () => {
-        const nama = nameEl.value.trim();
-        const num = normalizePhone(phoneEl.value.trim());
-        if (!nama) {
-          feedback.style.display = 'block';
-          feedback.style.color = '#f87171';
-          feedback.textContent = 'Nama tidak boleh kosong.';
-          return;
-        }
-        if (!num) {
-          feedback.style.display = 'block';
-          feedback.style.color = '#f87171';
-          feedback.textContent = 'Nomor WhatsApp tidak valid.';
-          return;
-        }
+    sendBtn.addEventListener('click', () => {
+      const nama = nameEl.value.trim();
+      const num = normalizePhone(phoneEl.value.trim());
+      if (!nama) {
         feedback.style.display = 'block';
-        feedback.style.color = '#0ef';
-        feedback.textContent = 'Menyiapkan email banding...';
-        const band = bandEl.value;
-        const subject = `Appeal Request for WhatsApp Account Ban (${num})`;
-        let bodyText = '';
-        if (band === 'permanen') {
-          bodyText = `Hello WhatsApp Team,
+        feedback.style.color = '#f87171';
+        feedback.textContent = 'Nama tidak boleh kosong.';
+        return;
+      }
+      if (!num) {
+        feedback.style.display = 'block';
+        feedback.style.color = '#f87171';
+        feedback.textContent = 'Nomor WhatsApp tidak valid.';
+        return;
+      }
+      feedback.style.display = 'block';
+      feedback.style.color = '#0ef';
+      feedback.textContent = 'Menyiapkan email banding...';
+      const band = bandEl.value;
+      const subject = `Appeal Request for WhatsApp Account Ban (${num})`;
+      let bodyText = '';
+      if (band === 'permanen') {
+        bodyText = `Hello WhatsApp Team,
 
 I would like to submit an appeal regarding the permanent ban on my WhatsApp account with the number ${num}. I believe this ban may have occurred due to a misunderstanding or an incorrect system detection of my account activity.
 
@@ -691,8 +696,8 @@ Thank you for your attention and cooperation. I sincerely hope my account can be
 Sincerely,
 ${nama}
 WhatsApp Number: ${num}`;
-        } else {
-          bodyText = `Hello WhatsApp Team,
+      } else {
+        bodyText = `Hello WhatsApp Team,
 
 I would like to submit a request for review regarding the temporary suspension of my WhatsApp account with the number ${num}. I recently realized that my account cannot be used for a period of time, and I sincerely apologize if there was any activity that may have violated WhatsApp’s policies.
 
@@ -703,28 +708,28 @@ Thank you for your attention and understanding.
 Sincerely,
 ${nama}
 WhatsApp Number: ${num}`;
-        }
+      }
 
 
-        const mailto = `mailto:support@support.whatsapp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+      const mailto = `mailto:support@support.whatsapp.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+      setTimeout(() => {
+        window.location.href = mailto;
         setTimeout(() => {
-          window.location.href = mailto;
-          setTimeout(() => {
-            nameEl.value = '';
-            phoneEl.value = '';
-            bandEl.value = 'permanen';
-            feedback.style.display = 'none';
-          }, 2000);
-        }, 1000);
-      });
+          nameEl.value = '';
+          phoneEl.value = '';
+          bandEl.value = 'permanen';
+          feedback.style.display = 'none';
+        }, 2000);
+      }, 1000);
+    });
 
-      clearBtn.addEventListener('click', () => {
-        nameEl.value = '';
-        phoneEl.value = '';
-        bandEl.value = 'permanen';
-        feedback.style.display = 'none';
-      });
-    </script>
+    clearBtn.addEventListener('click', () => {
+      nameEl.value = '';
+      phoneEl.value = '';
+      bandEl.value = 'permanen';
+      feedback.style.display = 'none';
+    });
+  </script>
 </body>
 
 </html>
