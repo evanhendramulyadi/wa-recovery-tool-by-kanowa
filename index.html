@@ -355,16 +355,7 @@
       padding-left: 6px !important;
     }
 
-    /* HAPUS ICON PASSWORD BAWAAN BROWSER (EDGE / CHROME) */
-    input[type="password"]::-ms-reveal,
-    input[type="password"]::-ms-clear {
-      display: none;
-    }
 
-    input[type="password"]::-webkit-credentials-auto-fill-button,
-    input[type="password"]::-webkit-textfield-decoration-container {
-      display: none !important;
-    }
   </style>
 
 </head>
@@ -391,10 +382,7 @@
         <div class="input-row">
           <div class="password-container">
 
-            <form autocomplete="off">
-              <input id="passwordInput" type="text" onfocus="this.type='password'" placeholder="Masukkan password"
-                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-            </form>
+           <input id="passwordInput" type="password" placeholder="Masukkan password" aria-label="password">
             <span id="togglePw" class="toggle-password">
               <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
