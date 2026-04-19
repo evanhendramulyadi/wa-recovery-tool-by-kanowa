@@ -277,20 +277,16 @@
       box-shadow: 0 0 8px rgba(6, 182, 212, .4);
     }
 
-    input[type="password"]::-webkit-credentials-auto-fill-button {
-      visibility: hidden;
-      display: none !important;
-      pointer-events: none;
+    input[type="password"] {
+      -webkit-appearance: none;
+      appearance: none;
+      -webkit-text-security: disc;
     }
 
-    input[type="password"]::-webkit-textfield-decoration-container {
-      display: none !important;
-    }
-
-    input[type="password"]::-ms-reveal,
-    input[type="password"]::-ms-clear,
+    input[type="password"]::-webkit-textfield-decoration-container,
     input[type="password"]::-webkit-credentials-auto-fill-button,
-    input[type="password"]::-webkit-textfield-decoration-container {
+    input[type="password"]::-ms-reveal,
+    input[type="password"]::-ms-clear {
       display: none !important;
     }
 
