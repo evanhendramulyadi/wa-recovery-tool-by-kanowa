@@ -356,13 +356,33 @@
       color: #000 !important;
       padding-left: 6px !important;
     }
+
+    .top-logo {
+      position: fixed;
+      top: 12px;
+      right: 14px;
+      width: 42px;
+      /* kamu bisa ubah ukuran */
+      height: 42px;
+      object-fit: contain;
+      z-index: 10000;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 4px;
+      backdrop-filter: blur(6px);
+    }
+
+    .top-logo:hover {
+      transform: scale(1.08);
+      transition: 0.2s;
+    }
   </style>
 
 </head>
 
 <body>
 
-  <img src="img/logo-wa-recovery-tool-by-kanowa.png" class="top-logo" alt="Logo WA Recovery Tool by KaNoWA" style="position:fixed;top:16px;right:16px;width:40px;height:40px;z-index:100;">
+  <img src="img/logo-wa-recovery-tool-by-kanowa.png" class="top-logo" alt="Logo WA Recovery Tool by KaNoWA">
 
   <div class="app">
     <div id="navbar" class="navbar" style="display:none;">
