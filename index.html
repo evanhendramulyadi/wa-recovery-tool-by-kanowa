@@ -34,7 +34,17 @@
       position: relative;
     }
 
-    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #071733;
+      z-index: -1;
+    }
+
     .app {
       min-height: 100vh;
       display: flex;
